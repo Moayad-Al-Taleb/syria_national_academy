@@ -1,0 +1,69 @@
+.row {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.input-field {
+  float: left;
+  margin-right: 30px;
+  width: calc(100% / 2 - 30px);
+}
+form {
+  margin: 20px auto;
+  width: 80%;
+}
+label {
+  display: block;
+}
+input {
+  display: block;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+input,
+textarea {
+  outline: none;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  height: 80px;
+  border: 1px solid transparent;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #27343d;
+}
+.add-btn {
+  display: block;
+  width: fit-content;
+  font-size: 1rem;
+  background-color: #dae427;
+  margin-top: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  form {
+    width: 100%;
+  }
+  .input-field,
+  textarea {
+    width: 100%;
+  }
+}
